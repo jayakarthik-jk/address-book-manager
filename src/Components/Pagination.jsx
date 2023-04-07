@@ -1,6 +1,6 @@
 function Pagination({ itemsCount, pageSize, currentPage, onPageChange }) {
   const pagesCount = Math.ceil(itemsCount / pageSize);
-  if (pagesCount <= pageSize) return null;
+  if (itemsCount <= pageSize) return null;
   const pages = [];
   for (let i = 1; i <= pagesCount; i++) {
     pages.push(i);
