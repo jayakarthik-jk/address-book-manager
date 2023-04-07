@@ -26,7 +26,7 @@ function Home() {
   });
 
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 10;
+  const pageSize = 5;
   const idRef = useRef(0);
 
   const handleSearchQueryChange = (e) => {
